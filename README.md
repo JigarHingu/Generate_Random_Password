@@ -21,8 +21,8 @@ All you need is a web browser!
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/random-password-generator.git
-   cd random-password-generator
+   git clone https://github.com/JigarHingu/random_password_generator.git
+   cd random_password_generator
 
 2. **Open `index.html`:**
    Open the `index.html` file in your favorite web browser.
@@ -86,4 +86,4 @@ We welcome contributions! Here’s how you can help:
 - Thanks to the open-source community for inspiring this project.
 - Created with ❤️ to enhance your digital security.
 
-# Stay safe online and enjoy using the Random Password Generator! 🚀🔐
+## Stay safe online and enjoy using the Random Password Generator! 🚀🔐
