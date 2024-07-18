@@ -1,0 +1,179 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(64, 62, 62);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #1b1b1e;
+}
+
+.settings {
+  margin-bottom: 20px;
+}
+
+.settings label {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #333;
+}
+
+.settings input[type="number"],
+.settings input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #1b1b1e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+button:focus {
+  outline: none;
+}
+
+.display {
+  text-align: center;
+}
+
+#password {
+  width: 100%;
+  padding: 12px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#password:focus {
+  outline: none;
+  border-color: gray;
+}
+
+#password + button {
+  display: block;
+  margin: 0 auto;
+}
+
+#passwordStrength {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #e63946;
+}
+
+.copy-message {
+  font-size: 16px;
+  color: #4caf50;
+  margin-top: 10px;
+  animation: fadeOut 3s ease-in-out;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+  visibility: hidden;
+  height: 0;
+  transition: height 0.3s ease, visibility 0.3s ease;
+  overflow: hidden;
+}
+
+.error-message.visible {
+  height: auto;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  #password {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+.custom-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(50, 50, 50, 0.9); /* Dark grey with transparency */
+  color: #fff; /* Text color for contrast */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.custom-dialog p {
+  margin-bottom: 20px;
+}
+
+.custom-dialog button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #1b1b1e; /* Dark grey */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-dialog button:hover {
+  background-color: #555; /* Lighter grey */
+}
+
+.custom-dialog button:focus {
+  outline: none;
+}
